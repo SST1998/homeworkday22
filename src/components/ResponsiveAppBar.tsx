@@ -21,7 +21,12 @@ const pages = {
     name: "Product",
     path: "product",
     element: "<Product/>"
-  }
+  },
+  // Checkout: {
+  //   name: "Checkout Form",
+  //   path: "checkout",
+  //   element: "<Checkout/>"
+  // }
 };
 const bgColor = "#f8f8ff";
 const fontColor = "#000";
