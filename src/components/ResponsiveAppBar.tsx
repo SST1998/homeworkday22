@@ -21,12 +21,7 @@ const pages = {
     name: "Product",
     path: "product",
     element: "<Product/>"
-  },
-  // Checkout: {
-  //   name: "Checkout Form",
-  //   path: "checkout",
-  //   element: "<Checkout/>"
-  // }
+  }
 };
 const bgColor = "#f8f8ff";
 const fontColor = "#000";
@@ -123,13 +118,15 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {Object.values(pages).map((page) => (
-              <Button
-                key={page.path}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: fontColor, display: "block" }}
-              >
-                <Link to={page.path} style={{ textDecoration: 'none', color: fontColor}}>{page.name}</Link>
-              </Button>
+              <Link to={page.path} style={{ textDecoration: 'none', color: fontColor}}>
+                <Button
+                  key={page.path}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: fontColor, display: "block" }}
+                >
+                  {page.name}
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>

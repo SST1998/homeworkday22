@@ -52,9 +52,9 @@ const Product = () => {
                     <TextField value="1" variant="outlined" fullWidth/>
                   </ListItem>
                   <ListItem>
-                    <Button variant="contained" color="primary">
-                      <Link to={'/checkout'} style={{ textDecoration: 'none', color: '#fff' }}>Add to Cart</Link>
-                    </Button>
+                    <Link to={'/checkout'} style={{ textDecoration: 'none', color: '#fff' }}>
+                      <Button variant="contained" color="primary">Add to Cart</Button>
+                    </Link>
                   </ListItem>
                 </List>
               </Paper>
